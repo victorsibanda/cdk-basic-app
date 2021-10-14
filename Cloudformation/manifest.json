@@ -1,0 +1,1258 @@
+{
+  "version": "14.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "AppStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "AppStack.template.json",
+        "validateOnSynth": false
+      },
+      "metadata": {
+        "/AppStack/TheVPC/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPC92636AB0",
+            "trace": [
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:741:21)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1Subnet770D4FF2",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1028:20)",
+              "new PublicSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1184:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:913:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1RouteTable17DA183D",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1046:19)",
+              "new PublicSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1184:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:913:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1RouteTableAssociationE5186D77",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1052:5)",
+              "new PublicSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1184:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:913:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1DefaultRoute6D26543F",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1062:19)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:789:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:788:46)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet1/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1EIP4412F690",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1192:21)",
+              "NatGatewayProvider.configureNat (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:865:14)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:795:14)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet1/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet1NATGatewayC61D892B",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1190:17)",
+              "NatGatewayProvider.configureNat (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:865:14)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:795:14)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2Subnet73F96DA9",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1028:20)",
+              "new PublicSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1184:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:913:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2RouteTable3609F42C",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1046:19)",
+              "new PublicSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1184:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:913:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2RouteTableAssociationB4B0A733",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1052:5)",
+              "new PublicSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1184:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:913:32",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2DefaultRouteFEB062B2",
+            "trace": [
+              "PublicSubnet.addDefaultInternetRoute (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1062:19)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:789:22",
+              "Array.forEach (<anonymous>)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:788:46)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet2/EIP": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2EIP5AAFF9FA",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1192:21)",
+              "NatGatewayProvider.configureNat (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:865:14)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:795:14)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PublicSubnet2/NATGateway": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPublicSubnet2NATGatewayB437CFAF",
+            "trace": [
+              "PublicSubnet.addNatGateway (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1190:17)",
+              "NatGatewayProvider.configureNat (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:116:27)",
+              "Vpc.createNatGateways (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:865:14)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:795:14)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet1/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1Subnet571D3690",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1028:20)",
+              "new PrivateSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:918:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet1/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1RouteTableF6513BC2",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1046:19)",
+              "new PrivateSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:918:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet1/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1RouteTableAssociation46F1FFFC",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1052:5)",
+              "new PrivateSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:918:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet1/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet1DefaultRouteD1B9E467",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1094:19)",
+              "NatGatewayProvider.configureSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:133:12)",
+              "NatGatewayProvider.configureNat (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:126:12)",
+              "Vpc.createNatGateways (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:865:14)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:795:14)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet2/Subnet": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2SubnetCC3D7013",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1028:20)",
+              "new PrivateSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:918:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet2/RouteTable": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2RouteTable9AC81FAC",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1046:19)",
+              "new PrivateSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:918:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet2/RouteTableAssociation": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2RouteTableAssociation336D47D1",
+            "trace": [
+              "new Subnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1052:5)",
+              "new PrivateSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1216:5)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:918:33",
+              "Array.forEach (<anonymous>)",
+              "Vpc.createSubnetResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:895:28)",
+              "Vpc.createSubnets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:890:12)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:770:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/PrivateSubnet2/DefaultRoute": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCPrivateSubnet2DefaultRoute52A1F245",
+            "trace": [
+              "PrivateSubnet.addRoute (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:1094:19)",
+              "NatGatewayProvider.configureSubnet (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:133:12)",
+              "NatGatewayProvider.configureNat (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/nat.ts:126:12)",
+              "Vpc.createNatGateways (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:865:14)",
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:795:14)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/IGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCIGWFA25CC08",
+            "trace": [
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:777:19)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/TheVPC/VPCGW": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "TheVPCVPCGWC9B93E30",
+            "trace": [
+              "new Vpc (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/vpc.ts:783:19)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:15:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/AppServerRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppServerRoleCAA606AB",
+            "trace": [
+              "new Role (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-iam/lib/role.ts:199:18)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:19:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/AppServerRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppServerRoleDefaultPolicyFACB3638",
+            "trace": [
+              "new Policy (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-iam/lib/policy.ts:89:22)",
+              "Role.addToPrincipalPolicy (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-iam/lib/role.ts:236:28)",
+              "Function.addToPrincipal (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-iam/lib/grant.ts:92:61)",
+              "Function.addToPrincipalOrResource (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-iam/lib/grant.ts:48:26)",
+              "SecretTargetAttachment.grantRead (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:111:30)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:88:27)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/ASGSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGSecurityGroup3960D0B6",
+            "trace": [
+              "new SecurityGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:26)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:26:18)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/ASGSecurityGroup/from AppStackALBSecurityGroup05EEDDEA:80": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ASGSecurityGroupfromAppStackALBSecurityGroup05EEDDEA80831C4048",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:65:7)",
+              "SecurityGroup.addIngressRule (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:306:13)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:107:23",
+              "ReactiveList.forEachAndForever (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:106:45",
+              "ReactiveList.forEachAndForever (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:200:7)",
+              "Connections.allowFrom (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/connections.ts:105:26)",
+              "ApplicationListener.registerConnectable (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:324:29)",
+              "ApplicationTargetGroup.registerListener (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:145:16)",
+              "TargetGroupListenerAction.bind (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener-action.ts:238:10)",
+              "ApplicationListener.setDefaultAction (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:340:12)",
+              "ApplicationListener.addTargetGroups (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:224:12)",
+              "ApplicationListener.addTargets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:250:10)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:114:15)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/AppServerAutoScalingGroup/InstanceProfile": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppServerAutoScalingGroupInstanceProfile3B58039E",
+            "trace": [
+              "new AutoScalingGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:535:24)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:58:22)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/AppServerAutoScalingGroup/LaunchConfig": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppServerAutoScalingGroupLaunchConfig1D2C698C",
+            "trace": [
+              "new AutoScalingGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:545:26)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:58:22)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/AppServerAutoScalingGroup/ASG": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "AppServerAutoScalingGroupASG7952AE48",
+            "trace": [
+              "new AutoScalingGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:634:29)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:58:22)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/SsmParameterValue:--aws--service--ami-amazon-linux-latest--amzn2-ami-hvm-x86_64-gp2:C96584B6-F00A-464E-AD19-53AFF4B05118.Parameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "SsmParameterValueawsserviceamiamazonlinuxlatestamzn2amihvmx8664gp2C96584B6F00A464EAD1953AFF4B05118Parameter",
+            "trace": [
+              "Function.fromStringParameterAttributes (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:194:9)",
+              "Function.valueForTypedStringParameter (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ssm/lib/parameter.ts:245:17)",
+              "lookupImage (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/machine-image.ts:407:27)",
+              "AmazonLinuxImage.getImage (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/machine-image.ts:210:21)",
+              "new AutoScalingGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-autoscaling/lib/auto-scaling-group.ts:540:44)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:58:22)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/DatabaseSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DatabaseSecurityGroup7319C0F6",
+            "trace": [
+              "new SecurityGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:26)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:73:22)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/DatabaseSecurityGroup/from AppStackASGSecurityGroupF95C03FC:5432": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DatabaseSecurityGroupfromAppStackASGSecurityGroupF95C03FC5432A86DEC09",
+            "trace": [
+              "SecurityGroup.addIngressRule (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:65:7)",
+              "SecurityGroup.addIngressRule (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:306:13)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:89:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/BackendDatabase/Subnets/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BackendDatabaseSubnetsBFD8ABD9",
+            "trace": [
+              "new SubnetGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/subnet-group.ts:48:25)",
+              "new ServerlessCluster (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/serverless-cluster.ts:252:45)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:79:27)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/BackendDatabase/Secret/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BackendDatabaseSecretD6329090",
+            "trace": [
+              "new Secret (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:337:22)",
+              "new DatabaseSecret (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/database-secret.ts:37:5)",
+              "Object.renderCredentials (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/private/util.ts:95:7)",
+              "new ServerlessCluster (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/serverless-cluster.ts:266:25)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:79:27)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/BackendDatabase/Secret/Attachment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BackendDatabaseSecretAttachmentE81B0D6E",
+            "trace": [
+              "new SecretTargetAttachment (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:485:24)",
+              "DatabaseSecret.attach (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-secretsmanager/lib/secret.ts:220:12)",
+              "new ServerlessCluster (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/serverless-cluster.ts:320:28)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:79:27)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/BackendDatabase/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "BackendDatabase7A04C5B4",
+            "trace": [
+              "new ServerlessCluster (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-rds/lib/serverless-cluster.ts:287:21)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:79:27)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/ALBSecurityGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALBSecurityGroup29A3BDEF",
+            "trace": [
+              "new SecurityGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-ec2/lib/security-group.ts:289:26)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:91:17)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/ALB/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALBAEE750D2",
+            "trace": [
+              "new BaseLoadBalancer (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-load-balancer.ts:138:22)",
+              "new ApplicationLoadBalancer (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:56:5)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:103:15)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/ALB/HTTP/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALBHTTP3BDC2BD0",
+            "trace": [
+              "new BaseListener (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-listener.ts:94:22)",
+              "new ApplicationListener (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:111:5)",
+              "ApplicationLoadBalancer.addListener (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-load-balancer.ts:77:22)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:109:27)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/ALB/HTTP/ALBLitsenerTargetsGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "ALBHTTPALBLitsenerTargetsGroupD817840F",
+            "trace": [
+              "new TargetGroupBase (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/shared/base-target-group.ts:129:21)",
+              "new ApplicationTargetGroup (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-target-group.ts:67:5)",
+              "ApplicationListener.addTargets (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/aws-elasticloadbalancingv2/lib/alb/application-listener.ts:235:19)",
+              "new AppStack (/Users/victorsibanda/Projects/CDK-Basic_App/lib/app-stack.ts:114:15)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/bin/app.ts:7:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Module.m._compile (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1056:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/index.ts:1059:12)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "main (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:198:14)",
+              "Object.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/ts-node/src/bin.ts:288:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1085:14)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)",
+              "Module.load (internal/modules/cjs/loader.js:950:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:790:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)",
+              "internal/main/run_main_module.js:17:47"
+            ]
+          }
+        ],
+        "/AppStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:22:24)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ],
+        "/AppStack/CDKMetadata/Condition": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadataAvailable",
+            "trace": [
+              "new MetadataResource (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:31:27)",
+              "/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:166:5",
+              "visit (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:231:5)",
+              "visit (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:227:5)",
+              "injectMetadataResources (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:157:3)",
+              "Object.synthesize (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/stage.ts:94:23)",
+              "process.<anonymous> (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/@aws-cdk/core/lib/app.ts:64:45)",
+              "Object.onceWrapper (events.js:482:26)",
+              "process.emit (events.js:375:28)",
+              "process.emit (domain.js:470:12)",
+              "process.emit (/Users/victorsibanda/Projects/CDK-Basic_App/node_modules/source-map-support/source-map-support.js:516:21)"
+            ]
+          }
+        ]
+      },
+      "displayName": "AppStack"
+    }
+  }
+}
